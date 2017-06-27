@@ -449,7 +449,6 @@ and `lt` are specified, the `lt` function is applied to the result of the `by` f
 `rev=true` reverses whatever ordering specified via the `by` and `lt` keywords.
 
 # Examples
-
 ```jldoctest
 julia> v = [3, 1, 2]; sort!(v); v
 3-element Array{Int64,1}:
@@ -526,7 +525,6 @@ end
 Variant of [`sort!`](@ref) that returns a sorted copy of `v` leaving `v` itself unmodified.
 
 # Examples
-
 ```jldoctest
 julia> v = [3, 1, 2];
 
@@ -584,7 +582,6 @@ specified using the same keywords as `sort!`.
 See also [`sortperm!`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> v = [3, 1, 2];
 
@@ -634,7 +631,6 @@ Like [`sortperm`](@ref), but accepts a preallocated index vector `ix`.  If `init
 (the default), `ix` is initialized to contain the values `1:length(v)`.
 
 # Examples
-
 ```jldoctest
 julia> v = [3, 1, 2]; p = zeros(Int, 3);
 
@@ -701,7 +697,6 @@ See [`sort!`](@ref) for a description of possible
 keyword arguments.
 
 # Examples
-
 ```jldoctest
 julia> A = [4 3; 1 2]
 2×2 Array{Int64,2}:
@@ -758,7 +753,6 @@ See [`sort!`](@ref) for a description of possible
 keyword arguments.
 
 # Examples
-
 ```jldoctest
 julia> sortrows([7 3 5; -1 6 4; 9 -2 8])
 3×3 Array{Int64,2}:
@@ -798,7 +792,6 @@ See [`sort!`](@ref) for a description of possible
 keyword arguments.
 
 # Examples
-
 ```jldoctest
 julia> sortcols([7 3 5; 6 -1 -4; 9 -2 8])
 3×3 Array{Int64,2}:

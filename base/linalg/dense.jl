@@ -37,7 +37,6 @@ Cholesky factorization of `A`, overwriting `A` in the process.
 See also [`isposdef`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> A = [1. 2.; 2. 50.];
 
@@ -60,7 +59,6 @@ Cholesky factorization of `A`.
 See also [`isposdef!`](@ref)
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2; 2 50]
 2×2 Array{Int64,2}:
@@ -140,7 +138,6 @@ Returns the lower triangle of `M` starting from the `k`th superdiagonal, overwri
 the process.
 
 # Examples
-
 ```jldoctest
 julia> M = [1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5]
 5×5 Array{Int64,2}:
@@ -206,7 +203,6 @@ end
 A `Range` giving the indices of the `k`th diagonal of the matrix `M`.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2 3; 4 5 6; 7 8 9]
 3×3 Array{Int64,2}:
@@ -227,7 +223,6 @@ The `k`th diagonal of a matrix, as a vector.
 Use [`diagm`](@ref) to construct a diagonal matrix.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2 3; 4 5 6; 7 8 9]
 3×3 Array{Int64,2}:
@@ -250,7 +245,6 @@ Construct a matrix by placing `v` on the `k`th diagonal. This constructs a full 
 you want a storage-efficient version with fast arithmetic, use [`Diagonal`](@ref) instead.
 
 # Examples
-
 ```jldoctest
 julia> diagm([1,2,3],1)
 4×4 Array{Int64,2}:
@@ -284,7 +278,6 @@ end
 Kronecker tensor product of two vectors or two matrices.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2; 3 4]
 2×2 Array{Int64,2}:
@@ -402,7 +395,6 @@ used, otherwise the scaling and squaring algorithm (see [^H05]) is chosen.
 [^H05]: Nicholas J. Higham, "The squaring and scaling method for the matrix exponential revisited", SIAM Journal on Matrix Analysis and Applications, 26(4), 2005, 1179-1193. [doi:10.1137/090768539](http://dx.doi.org/10.1137/090768539)
 
 # Examples
-
 ```jldoctest
 julia> A = eye(2, 2)
 2×2 Array{Float64,2}:
@@ -533,7 +525,6 @@ triangular factor.
 [^AHR13]: Awad H. Al-Mohy, Nicholas J. Higham and Samuel D. Relton, "Computing the Fréchet derivative of the matrix logarithm and estimating the condition number", SIAM Journal on Scientific Computing, 35(4), 2013, C394-C410. [doi:10.1137/120885991](http://dx.doi.org/10.1137/120885991)
 
 # Examples
-
 ```jldoctest
 julia> A = 2.7182818 * eye(2)
 2×2 Array{Float64,2}:
@@ -600,7 +591,6 @@ and then the complex square root of the triangular factor.
     [doi:10.1016/0024-3795(83)80010-X](http://dx.doi.org/10.1016/0024-3795(83)80010-X)
 
 # Examples
-
 ```jldoctest
 julia> A = [4 0; 0 4]
 2×2 Array{Int64,2}:
@@ -686,7 +676,6 @@ If `factorize` is called on a Hermitian positive-definite matrix, for instance, 
 will return a Cholesky factorization.
 
 # Examples
-
 ```jldoctest
 julia> A = Array(Bidiagonal(ones(5, 5), true))
 5×5 Array{Float64,2}:
@@ -804,7 +793,6 @@ inverting dense ill-conditioned matrices in a least-squares sense,
 For more information, see [^issue8859], [^B96], [^S84], [^KY88].
 
 # Examples
-
 ```jldoctest
 julia> M = [1.5 1.3; 1.2 1.9]
 2×2 Array{Float64,2}:
@@ -877,7 +865,6 @@ end
 Basis for nullspace of `M`.
 
 # Examples
-
 ```jldoctest
 julia> M = [1 0 0; 0 1 0; 0 0 0]
 3×3 Array{Int64,2}:

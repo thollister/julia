@@ -37,7 +37,6 @@ end
 An object of type [`UniformScaling`](@ref), representing an identity matrix of any size.
 
 # Examples
-
 ```jldoctest
 julia> ones(5, 6) * I == ones(5, 6)
 true

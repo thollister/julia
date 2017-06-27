@@ -82,7 +82,6 @@ of the `SVD` factorization to a tuple. Direct use of `svdfact` is therefore more
 efficient.
 
 # Examples
-
 ```jldoctest
 julia> A = [1. 0. 0. 0. 2.; 0. 0. 3. 0. 0.; 0. 0. 0. 0. 0.; 0. 2. 0. 0. 0.]
 4×5 Array{Float64,2}:
@@ -137,7 +136,6 @@ svdvals(A::AbstractMatrix{<:BlasFloat}) = svdvals!(copy(A))
 Returns the singular values of `A` in descending order.
 
 # Examples
-
 ```jldoctest
 julia> A = [1. 0. 0. 0. 2.; 0. 0. 3. 0. 0.; 0. 0. 0. 0. 0.; 0. 2. 0. 0. 0.]
 4×5 Array{Float64,2}:

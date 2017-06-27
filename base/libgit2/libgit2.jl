@@ -75,7 +75,6 @@ Checks if commit `id` (which is a [`GitHash`](@ref) in string form)
 is in the repository.
 
 # Examples
-
 ```julia-repl
 julia> repo = LibGit2.GitRepo(repo_path);
 
@@ -169,7 +168,6 @@ The keyword argument is:
 Returns only the *names* of the files which have changed, *not* their contents.
 
 # Examples
-
 ```julia
 LibGit2.branch!(repo, "branch/a")
 LibGit2.branch!(repo, "branch/b")
@@ -220,7 +218,6 @@ Returns `true` if `a`, a [`GitHash`](@ref) in string form, is an ancestor of
 `b`, a [`GitHash`](@ref) in string form.
 
 # Examples
-
 ```julia-repl
 julia> repo = LibGit2.GitRepo(repo_path);
 
@@ -350,7 +347,6 @@ The keyword arguments are:
 Equivalent to `git checkout [-b|-B] <branch_name> [<commit>] [--track <track>]`.
 
 # Examples
-
 ```julia
 repo = LibGit2.GitRepo(repo_path)
 LibGit2.branch!(repo, "new_branch", set_head=false)
@@ -431,7 +427,6 @@ in `repo`. If `force` is `true`, force the checkout and discard any
 current changes. Note that this detaches the current HEAD.
 
 # Examples
-
 ```julia
 repo = LibGit2.init(repo_path)
 open(joinpath(LibGit2.path(repo), "file1"), "w") do f
@@ -500,7 +495,6 @@ The keyword arguments are:
 Equivalent to `git clone [-b <branch>] [--bare] <repo_url> <repo_path>`.
 
 # Examples
-
 ```julia
 repo_url = "https://github.com/JuliaLang/Example.jl"
 repo1 = LibGit2.clone(repo_url, "test_path")
@@ -546,7 +540,6 @@ set by `mode`:
 Equivalent to `git reset [--soft | --mixed | --hard] <id>`.
 
 # Examples
-
 ```julia
 repo = LibGit2.GitRepo(repo_path)
 head_oid = LibGit2.head_oid(repo)
@@ -764,7 +757,6 @@ end
 Returns all authors of commits to the `repo` repository.
 
 # Examples
-
 ```julia
 repo = LibGit2.GitRepo(repo_path)
 repo_file = open(joinpath(repo_path, test_file), "a")

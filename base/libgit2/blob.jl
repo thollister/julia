@@ -40,7 +40,6 @@ Reads the file at `path` and adds it to the object database of `repo` as a loose
 Returns the `GitHash` of the resulting blob.
 
 # Examples
-
 ```julia
 hash_str = hex(commit_oid)
 blob_file = joinpath(repo_path, ".git", "objects", hash_str[1:2], hash_str[3:end])

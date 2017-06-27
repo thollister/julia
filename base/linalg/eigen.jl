@@ -80,7 +80,6 @@ closer to upper triangular, and `scale=true` scales the matrix by its diagonal e
 make rows and columns more equal in norm. The default is `true` for both options.
 
 # Examples
-
 ```jldoctest
 julia> F = eigfact([1.0 0.0 0.0; 0.0 3.0 0.0; 0.0 0.0 18.0])
 Base.LinAlg.Eigen{Float64,Float64,Array{Float64,2},Array{Float64,1}}([1.0, 3.0, 18.0], [1.0 0.0 0.0; 0.0 1.0 0.0; 0.0 0.0 1.0])
@@ -123,7 +122,6 @@ and the `permute` and `scale` keyword arguments.
 The eigenvectors are returned columnwise.
 
 # Examples
-
 ```jldoctest
 julia> eig([1.0 0.0 0.0; 0.0 3.0 0.0; 0.0 0.0 18.0])
 ([1.0, 3.0, 18.0], [1.0 0.0 0.0; 0.0 1.0 0.0; 0.0 0.0 1.0])
@@ -145,7 +143,6 @@ be obtained from the slice `M[:, k]`.) The `permute` and `scale` keywords are th
 for [`eigfact`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> eigvecs([1.0 0.0 0.0; 0.0 3.0 0.0; 0.0 0.0 18.0])
 3×3 Array{Float64,2}:
@@ -210,7 +207,6 @@ this method will fail, since complex numbers cannot
 be sorted.
 
 # Examples
-
 ```jldoctest
 julia> A = [0 im; -im 0]
 2×2 Array{Complex{Int64},2}:
@@ -252,7 +248,6 @@ this method will fail, since complex numbers cannot
 be sorted.
 
 # Examples
-
 ```jldoctest
 julia> A = [0 im; -im 0]
 2×2 Array{Complex{Int64},2}:
@@ -339,7 +334,6 @@ Computes generalized eigenvalues (`D`) and vectors (`V`) of `A` with respect to 
 factorization to a tuple; where possible, using [`eigfact`](@ref) is recommended.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 0; 0 -1]
 2×2 Array{Int64,2}:
@@ -386,7 +380,6 @@ end
 Computes the generalized eigenvalues of `A` and `B`.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 0; 0 -1]
 2×2 Array{Int64,2}:
@@ -416,7 +409,6 @@ Returns a matrix `M` whose columns are the generalized eigenvectors of `A` and `
 be obtained from the slice `M[:, k]`.)
 
 # Examples
-
 ```jldoctest
 julia> A = [1 0; 0 -1]
 2×2 Array{Int64,2}:

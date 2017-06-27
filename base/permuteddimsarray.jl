@@ -26,7 +26,6 @@ that no copying occurs (`B` shares storage with `A`).
 See also: [`permutedims`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> A = rand(3,5,4);
 

@@ -6,7 +6,6 @@
 Look up a remote git repository using its name and URL. Uses the default fetch refspec.
 
 # Examples
-
 ```julia
 repo = LibGit2.init(repo_path)
 remote = LibGit2.GitRemote(repo, "upstream", repo_url)
@@ -28,7 +27,6 @@ as well as specifications for how to fetch from the remote
 (e.g. which remote branch to fetch from).
 
 # Examples
-
 ```julia
 repo = LibGit2.init(repo_path)
 refspec = "+refs/heads/mybranch:refs/remotes/origin/mybranch"
@@ -49,7 +47,6 @@ end
 Look up a remote git repository using only its URL, not its name.
 
 # Examples
-
 ```julia
 repo = LibGit2.init(repo_path)
 remote = LibGit2.GitRemoteAnon(repo, repo_url)
@@ -98,7 +95,6 @@ end
 Get the fetch URL of a remote git repository.
 
 # Examples
-
 ```julia-repl
 julia> repo_url = "https://github.com/JuliaLang/Example.jl";
 
@@ -122,7 +118,6 @@ end
 Get the push URL of a remote git repository.
 
 # Examples
-
 ```julia-repl
 julia> repo_url = "https://github.com/JuliaLang/Example.jl";
 
@@ -148,7 +143,6 @@ If the remote is anonymous (see [`GitRemoteAnon`](@ref))
 the name will be an empty string `""`.
 
 # Examples
-
 ```julia-repl
 julia> repo_url = "https://github.com/JuliaLang/Example.jl";
 
@@ -351,7 +345,6 @@ Set both the fetch and push `url` for `remote_name` for the GitRepo or the git r
 located at `path`. Typically git repos use "origin" as the remote name.
 
 # Examples
-
 ```julia
 repo_path = joinpath(tempdir(), "Example")
 repo = LibGit2.init(repo_path)

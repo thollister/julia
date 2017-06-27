@@ -51,7 +51,6 @@ iterations `niter` and the number of matrix vector multiplications `nmult`, as w
 final residual vector `resid`.
 
 # Examples
-
 ```jldoctest
 julia> A = spdiagm(1:4);
 
@@ -145,7 +144,6 @@ iterations `niter` and the number of matrix vector multiplications `nmult`, as w
 final residual vector `resid`.
 
 # Examples
-
 ```jldoctest
 julia> A = speye(4, 4); B = spdiagm(1:4);
 
@@ -380,7 +378,6 @@ iterations derived from [`eigs`](@ref).
 * `resid`: Final residual vector.
 
 # Examples
-
 ```jldoctest
 julia> A = spdiagm(1:4);
 

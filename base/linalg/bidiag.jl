@@ -22,7 +22,6 @@ matrix with [`convert(Array, _)`](@ref) (or `Array(_)` for short). `ev`'s length
 must be one less than the length of `dv`.
 
 # Examples
-
 ```jldoctest
 julia> dv = [1; 2; 3; 4]
 4-element Array{Int64,1}:
@@ -65,7 +64,6 @@ matrix with [`convert(Array, _)`](@ref) (or `Array(_)` for short). `ev`'s
 length must be one less than the length of `dv`.
 
 # Examples
-
 ```jldoctest
 julia> dv = [1; 2; 3; 4]
 4-element Array{Int64,1}:
@@ -118,7 +116,6 @@ Construct a `Bidiagonal` matrix from the main diagonal of `A` and
 its first super- (if `isupper=true`) or sub-diagonal (if `isupper=false`).
 
 # Examples
-
 ```jldoctest
 julia> A = [1 1 1 1; 2 2 2 2; 3 3 3 3; 4 4 4 4]
 4×4 Array{Int64,2}:

@@ -55,7 +55,6 @@ thrown if the scaling produces a number not representable by the element type of
 e.g. for integer types.
 
 # Examples
-
 ```jldoctest
 julia> a = [1 2; 3 4]
 2×2 Array{Int64,2}:
@@ -92,7 +91,6 @@ scale!(s::Number, X::AbstractArray) = generic_scale!(s, X)
 Compute the cross product of two 3-vectors.
 
 # Examples
-
 ```jldoctest
 julia> a = [0;1;0]
 3-element Array{Int64,1}:
@@ -122,7 +120,6 @@ cross(a::AbstractVector, b::AbstractVector) =
 Upper triangle of a matrix.
 
 # Examples
-
 ```jldoctest
 julia> a = ones(4,4)
 4×4 Array{Float64,2}:
@@ -147,7 +144,6 @@ triu(M::AbstractMatrix) = triu!(copy(M))
 Lower triangle of a matrix.
 
 # Examples
-
 ```jldoctest
 julia> a = ones(4,4)
 4×4 Array{Float64,2}:
@@ -172,7 +168,6 @@ tril(M::AbstractMatrix) = tril!(copy(M))
 Returns the upper triangle of `M` starting from the `k`th superdiagonal.
 
 # Examples
-
 ```jldoctest
 julia> a = ones(4,4)
 4×4 Array{Float64,2}:
@@ -204,7 +199,6 @@ triu(M::AbstractMatrix,k::Integer) = triu!(copy(M),k)
 Returns the lower triangle of `M` starting from the `k`th superdiagonal.
 
 # Examples
-
 ```jldoctest
 julia> a = ones(4,4)
 4×4 Array{Float64,2}:
@@ -255,7 +249,6 @@ Finite difference operator of matrix or vector `A`. If `A` is a matrix,
 compute the finite difference over a dimension `dim` (default `1`).
 
 # Examples
-
 ```jldoctest
 julia> a = [2 4; 6 16]
 2×2 Array{Int64,2}:
@@ -288,7 +281,6 @@ Compute differences along vector `F`, using `h` as the spacing between points. T
 spacing is one.
 
 # Examples
-
 ```jldoctest
 julia> a = [2,4,6,8];
 
@@ -430,7 +422,6 @@ in `abs(A)`, whereas `vecnorm(A, -Inf)` returns the smallest. If `A` is a matrix
 then this is equivalent to the Frobenius norm.
 
 # Examples
-
 ```jldoctest
 julia> vecnorm([1 2 3; 4 5 6; 7 8 9])
 16.881943016134134
@@ -522,7 +513,6 @@ mathematically valid vector norm). In particular, `norm(A, Inf)` returns the lar
 in `abs(A)`, whereas `norm(A, -Inf)` returns the smallest.
 
 # Examples
-
 ```jldoctest
 julia> v = [3, -2, 6]
 3-element Array{Int64,1}:
@@ -561,7 +551,6 @@ When `p=Inf`, the matrix norm is the maximum absolute row sum of `A`:
 ```
 
 # Examples
-
 ```jldoctest
 julia> A = [1 -2 -3; 2 3 -1]
 2×3 Array{Int64,2}:
@@ -681,7 +670,6 @@ dot(x::Number, y::Number) = vecdot(x, y)
 Compute the dot product. For complex vectors, the first vector is conjugated.
 
 # Examples
-
 ```jldoctest
 julia> dot([1; 1], [2; 3])
 5
@@ -733,7 +721,6 @@ rank(x::Number) = x==0 ? 0 : 1
 Matrix trace. Sums the diagonal elements of `M`.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2; 3 4]
 2×2 Array{Int64,2}:
@@ -764,7 +751,6 @@ Computed by solving the left-division
 `N = M \\ I`.
 
 # Examples
-
 ```jldoctest
 julia> M = [2 5; 1 3]
 2×2 Array{Int64,2}:
@@ -803,7 +789,6 @@ factorization does not use pivoting during the numerical factorization and there
 procedure can fail even for invertible matrices.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 0; 1 -2]; B = [32; -4];
 
@@ -870,7 +855,6 @@ issymmetric(A::AbstractMatrix{<:Real}) = ishermitian(A)
 Test whether a matrix is symmetric.
 
 # Examples
-
 ```jldoctest
 julia> a = [1 2; 2 -1]
 2×2 Array{Int64,2}:
@@ -910,7 +894,6 @@ issymmetric(x::Number) = x == x
 Test whether a matrix is Hermitian.
 
 # Examples
-
 ```jldoctest
 julia> a = [1 2; 2 -1]
 2×2 Array{Int64,2}:
@@ -950,7 +933,6 @@ ishermitian(x::Number) = (x == conj(x))
 Test whether a matrix is upper triangular.
 
 # Examples
-
 ```jldoctest
 julia> a = [1 2; 2 -1]
 2×2 Array{Int64,2}:
@@ -985,7 +967,6 @@ end
 Test whether a matrix is lower triangular.
 
 # Examples
-
 ```jldoctest
 julia> a = [1 2; 2 -1]
 2×2 Array{Int64,2}:
@@ -1020,7 +1001,6 @@ end
 Test whether a matrix is diagonal.
 
 # Examples
-
 ```jldoctest
 julia> a = [1 2; 2 -1]
 2×2 Array{Int64,2}:
@@ -1207,7 +1187,6 @@ end
 Matrix determinant.
 
 # Examples
-
 ```jldoctest
 julia> M = [1 0; 2 2]
 2×2 Array{Int64,2}:
@@ -1242,7 +1221,6 @@ Log of matrix determinant. Equivalent to `log(det(M))`, but may provide
 increased accuracy and/or speed.
 
 # Examples
-
 ```jldoctest
 julia> M = [1 0; 2 2]
 2×2 Array{Int64,2}:
@@ -1271,7 +1249,6 @@ elements.  Equivalent to `promote_type(typeof(leaf1), typeof(leaf2), ...)`.
 Currently supports only numeric leaf elements.
 
 # Examples
-
 ```jldoctest
 julia> a = [[1,2, [3,4]], 5.0, [6im, [7.0, 8.0]]]
 3-element Array{Any,1}:
@@ -1340,7 +1317,6 @@ i.e. `norm(v, p) == vecnorm(v, p) == 1`.
 See also [`normalize!`](@ref) and [`vecnorm`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> a = [1,2,4];
 

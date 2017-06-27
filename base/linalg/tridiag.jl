@@ -23,7 +23,6 @@ eigensolvers, but may be converted into a regular matrix with
 [`convert(Array, _)`](@ref) (or `Array(_)` for short).
 
 # Examples
-
 ```jldoctest
 julia> dv = [1; 2; 3; 4]
 4-element Array{Int64,1}:
@@ -219,7 +218,6 @@ If the optional vector of eigenvalues `eigvals` is specified, `eigvecs`
 returns the specific corresponding eigenvectors.
 
 # Examples
-
 ```jldoctest
 julia> A = SymTridiagonal([1.; 2.; 1.], [2.; 3.])
 3×3 SymTridiagonal{Float64}:
@@ -402,7 +400,6 @@ solvers, but may be converted into a regular matrix with
 The lengths of `dl` and `du` must be one less than the length of `d`.
 
 # Examples
-
 ```jldoctest
 julia> dl = [1; 2; 3]
 3-element Array{Int64,1}:
@@ -453,7 +450,6 @@ returns a `Tridiagonal` array based on (abstract) matrix `A`, using its first lo
 main diagonal, and first upper diagonal.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2 3 4; 1 2 3 4; 1 2 3 4; 1 2 3 4]
 4×4 Array{Int64,2}:

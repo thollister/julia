@@ -123,7 +123,6 @@ The relationship between `F` and `A` is
 | [`size`](@ref)                   | ✓    | ✓                      |
 
 # Examples
-
 ```jldoctest
 julia> A = [4 3; 6 3]
 2×2 Array{Int64,2}:
@@ -175,7 +174,6 @@ By default, pivoting is used. This can be overridden by passing
 See also [`lufact`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> A = [4. 3.; 6. 3.]
 2×2 Array{Float64,2}:

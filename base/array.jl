@@ -59,7 +59,6 @@ If the rank `N` is supplied explicitly as in `Array{T,N}(dims)`, then it must
 match the length or number of `dims`.
 
 # Examples
-
 ```jldoctest
 julia> A = Array{Float64, 2}(2, 2);
 
@@ -269,7 +268,6 @@ end
 The default element type is [`Float64`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> eye(3, 4)
 3×4 Array{Float64,2}:

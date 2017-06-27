@@ -501,7 +501,6 @@ is already sorted in that order. Returns an empty range located at the insertion
 if `a` does not contain values equal to `x`.
 
 # Examples
-
 ```jldoctest
 julia> a = [4, 3, 2, 1]
 4-element Array{Int64,1}:
@@ -861,7 +860,6 @@ values at those indices is returned. Note that `select!` does not fully sort the
 array.
 
 # Examples
-
 ```jldoctest
 julia> a = [1, 2, 4, 3, 4]
 5-element Array{Int64,1}:
@@ -912,7 +910,6 @@ lower-case letters and the digits 0-9. The optional `rng` argument
 specifies a random number generator, see [Random Numbers](@ref).
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1348,7 +1345,6 @@ specified order. Returns `length(a)+1` if `x` is greater than all values in `a`.
 `a` is assumed to be sorted.
 
 # Examples
-
 ```jldoctest
 julia> searchsortedfirst([1, 2, 4, 5, 14], 4)
 3
@@ -2022,7 +2018,6 @@ specified order. Returns `0` if `x` is less than all values in `a`. `a` is assum
 be sorted.
 
 # Examples
-
 ```jldoctest
 julia> searchsortedlast([1, 2, 4, 5, 14], 4)
 3

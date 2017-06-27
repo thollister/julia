@@ -247,7 +247,6 @@ and `F[:Q]*A` are supported. A `Q` matrix can be converted into a regular matrix
 [`full`](@ref) which has a named argument `thin`.
 
 # Examples
-
 ```jldoctest
 julia> A = [3.0 -6.0; 4.0 -8.0; 0.0 1.0]
 3×2 Array{Float64,2}:
@@ -312,7 +311,6 @@ See also [`normalize`](@ref), [`normalize!`](@ref),
 and [`LinAlg.qr!`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> v = [1; 2]
 2-element Array{Int64,1}:

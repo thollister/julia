@@ -165,7 +165,6 @@ Compute the Cholesky factorization of a positive definite matrix `A`
 and return the [`UpperTriangular`](@ref) matrix `U` such that `A = U'U`.
 
 # Examples
-
 ```jldoctest
 julia> A = [1. 2.; 2. 50.]
 2×2 Array{Float64,2}:
@@ -195,7 +194,6 @@ end
 Compute the square root of a non-negative number `x`.
 
 # Examples
-
 ```jldoctest
 julia> chol(16)
 4.0
@@ -228,7 +226,6 @@ the factorization produces a number not representable by the element type of
 `A`, e.g. for integer types.
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2; 2 50]
 2×2 Array{Int64,2}:
@@ -291,7 +288,6 @@ The following functions are available for `Cholesky` objects: [`size`](@ref), [`
 [`inv`](@ref), [`det`](@ref), [`logdet`](@ref) and [`isposdef`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> A = [4. 12. -16.; 12. 37. -43.; -16. -43. 98.]
 3×3 Array{Float64,2}:

@@ -29,7 +29,6 @@ module IteratorsMD
     always when iterating with an explicit [`CartesianRange`](@ref).
 
     # Examples
-
     ```jldoctest
     julia> A = reshape(collect(1:16), (2, 2, 2, 2))
     2×2×2×2 Array{Int64,4}:
@@ -1344,7 +1343,6 @@ hash(x::Prehashed) = x.hash
 Return unique regions of `A` along dimension `dim`.
 
 # Examples
-
 ```jldoctest
 julia> A = map(isodd, reshape(collect(1:8), (2,2,2)))
 2×2×2 Array{Bool,3}:

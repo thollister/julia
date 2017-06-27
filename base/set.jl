@@ -128,7 +128,6 @@ as determined by [`isequal`](@ref), in the order that the first of each
 set of equivalent elements originally appears.
 
 # Examples
-
 ```jldoctest
 julia> unique([1, 2, 6, 2])
 3-element Array{Int64,1}:
@@ -185,7 +184,6 @@ Returns an array containing one value from `itr` for each unique value produced 
 applied to elements of `itr`.
 
 # Examples
-
 ```jldoctest
 julia> unique(isodd, [1, 2, 6, 2])
 2-element Array{Int64,1}:

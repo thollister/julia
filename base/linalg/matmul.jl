@@ -133,7 +133,6 @@ Ac_mul_B!(y::AbstractVector, A::AbstractVecOrMat, x::AbstractVector) = generic_m
 Matrix multiplication.
 
 # Examples
-
 ```jldoctest
 julia> [1 1; 0 1] * [1 0; 1 1]
 2×2 Array{Int64,2}:
@@ -165,7 +164,6 @@ overwriting the existing value of `Y`. Note that `Y` must not be aliased with ei
 `B`.
 
 # Examples
-
 ```jldoctest
 julia> A=[1.0 2.0; 3.0 4.0]; B=[1.0 1.0; 1.0 1.0]; Y = similar(B); A_mul_B!(Y, A, B);
 

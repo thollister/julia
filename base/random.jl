@@ -271,7 +271,6 @@ Pick a random element or array of random elements from the set of values specifi
 `S` defaults to [`Float64`](@ref).
 
 # Examples
-
 ```julia-repl
 julia> rand(Int, 2)
 2-element Array{Int64,1}:
@@ -310,7 +309,6 @@ This is equivalent to `copy!(A, rand(rng, S, size(A)))`
 but without allocating a new array.
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -772,7 +770,6 @@ end
 Generate a `BitArray` of random boolean values.
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1301,7 +1298,6 @@ The `Base` module currently provides an implementation for the types
 from the circularly symmetric complex normal distribution.
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1349,7 +1345,6 @@ The `Base` module currently provides an implementation for the types
 [`Float16`](@ref), [`Float32`](@ref), and [`Float64`](@ref) (the default).
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1390,7 +1385,6 @@ Fill the array `A` with normally-distributed (mean 0, standard deviation 1) rand
 Also see the [`rand`](@ref) function.
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1411,7 +1405,6 @@ function randn! end
 Fill the array `A` with random numbers following the exponential distribution (with scale 1).
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1479,7 +1472,6 @@ by RFC 4122. Note that the Node ID is randomly generated (does not identify the 
 according to section 4.5 of the RFC.
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1537,7 +1529,6 @@ end
 Inspects the given UUID and returns its version (see RFC 4122).
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1661,7 +1652,6 @@ In-place version of [`shuffle`](@ref): randomly permute `v` in-place,
 optionally supplying the random-number generator `rng`.
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1708,7 +1698,6 @@ To permute `v` in-place, see [`shuffle!`](@ref). To obtain randomly permuted
 indices, see [`randperm`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1738,7 +1727,6 @@ To randomly permute a arbitrary vector, see [`shuffle`](@ref)
 or [`shuffle!`](@ref).
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1777,7 +1765,6 @@ Construct a random cyclic permutation of length `n`. The optional `rng`
 argument specifies a random number generator, see [Random Numbers](@ref).
 
 # Examples
-
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 

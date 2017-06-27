@@ -100,7 +100,6 @@ end
 The transposition operator (`.'`).
 
 # Examples
-
 ```jldoctest
 julia> A = [1 2 3; 4 5 6; 7 8 9]
 3×3 Array{Int64,2}:
