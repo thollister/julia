@@ -47,7 +47,7 @@ Symbol(s::AbstractString) = Symbol(String(s))
 
 The number of bytes in string `s`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> sizeof("❤")
@@ -65,7 +65,7 @@ eltype(::Type{<:AbstractString}) = Char
 
 Concatenate strings. The `*` operator is an alias to this function.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> "Hello " * "world"
@@ -83,7 +83,7 @@ length(s::DirectIndexString) = endof(s)
 
 The number of characters in string `s`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> length("jμΛIα")
@@ -268,7 +268,7 @@ respect to string `s`.
 
 See also [`chr2ind`](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> str = "αβγdef";
@@ -301,7 +301,7 @@ Convert a character index `i` to a byte index.
 
 See also [`ind2chr`](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> str = "αβγdef";
@@ -345,7 +345,7 @@ eltype(::Type{EachStringIndex}) = Int
 
 Gives the number of columns needed to print a string.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> strwidth("March")
@@ -373,7 +373,7 @@ promote_rule(::Type{<:AbstractString}, ::Type{<:AbstractString}) = String
 Tests whether a character is a valid hexadecimal digit. Note that this does not
 include `x` (as in the standard `0x` prefix).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> isxdigit('a')
@@ -392,7 +392,7 @@ isxdigit(c::Char) = '0'<=c<='9' || 'a'<=c<='f' || 'A'<=c<='F'
 
 Returns `s` with all characters converted to uppercase.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> uppercase("Julia")
@@ -406,7 +406,7 @@ uppercase(s::AbstractString) = map(uppercase, s)
 
 Returns `s` with all characters converted to lowercase.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> lowercase("STRINGS AND THINGS")
@@ -422,7 +422,7 @@ Capitalizes the first character of each word in `s`.
 See also [`ucfirst`](@ref) to capitalize only the first
 character in `s`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> titlecase("the julia programming language")
@@ -452,7 +452,7 @@ Returns `string` with the first character converted to uppercase
 See also [`titlecase`](@ref) to capitalize the first character of
 every word in `s`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> ucfirst("python")
@@ -471,7 +471,7 @@ end
 
 Returns `string` with the first character converted to lowercase.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> lcfirst("Julia")

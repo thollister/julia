@@ -54,7 +54,7 @@ If `A` is a matrix and `b` is a vector, then `scale!(A,b)` scales each column `i
 thrown if the scaling produces a number not representable by the element type of `A`,
 e.g. for integer types.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = [1 2; 3 4]
@@ -91,7 +91,7 @@ scale!(s::Number, X::AbstractArray) = generic_scale!(s, X)
 
 Compute the cross product of two 3-vectors.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = [0;1;0]
@@ -121,7 +121,7 @@ cross(a::AbstractVector, b::AbstractVector) =
 
 Upper triangle of a matrix.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = ones(4,4)
@@ -146,7 +146,7 @@ triu(M::AbstractMatrix) = triu!(copy(M))
 
 Lower triangle of a matrix.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = ones(4,4)
@@ -171,7 +171,7 @@ tril(M::AbstractMatrix) = tril!(copy(M))
 
 Returns the upper triangle of `M` starting from the `k`th superdiagonal.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = ones(4,4)
@@ -203,7 +203,7 @@ triu(M::AbstractMatrix,k::Integer) = triu!(copy(M),k)
 
 Returns the lower triangle of `M` starting from the `k`th superdiagonal.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = ones(4,4)
@@ -254,7 +254,7 @@ diff(a::AbstractVector) = [ a[i+1] - a[i] for i=1:length(a)-1 ]
 Finite difference operator of matrix or vector `A`. If `A` is a matrix,
 compute the finite difference over a dimension `dim` (default `1`).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = [2 4; 6 16]
@@ -287,7 +287,7 @@ gradient(F::AbstractVector) = gradient(F, [1:length(F);])
 Compute differences along vector `F`, using `h` as the spacing between points. The default
 spacing is one.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = [2,4,6,8];
@@ -429,7 +429,7 @@ mathematically valid vector norm). In particular, `vecnorm(A, Inf)` returns the 
 in `abs(A)`, whereas `vecnorm(A, -Inf)` returns the smallest. If `A` is a matrix and `p=2`,
 then this is equivalent to the Frobenius norm.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> vecnorm([1 2 3; 4 5 6; 7 8 9])
@@ -521,7 +521,7 @@ with ``a_i`` the entries of ``A`` and ``n`` its length.
 mathematically valid vector norm). In particular, `norm(A, Inf)` returns the largest value
 in `abs(A)`, whereas `norm(A, -Inf)` returns the smallest.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> v = [3, -2, 6]
@@ -560,7 +560,7 @@ When `p=Inf`, the matrix norm is the maximum absolute row sum of `A`:
 \\|A\\|_\\infty = \\max_{1 ≤ i ≤ m} \\sum _{j=1}^n | a_{ij} |
 ```
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 -2 -3; 2 3 -1]
@@ -680,7 +680,7 @@ dot(x::Number, y::Number) = vecdot(x, y)
 
 Compute the dot product. For complex vectors, the first vector is conjugated.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> dot([1; 1], [2; 3])
@@ -703,7 +703,7 @@ By default, the value of `tol` is the largest
 dimension of `M` multiplied by the [`eps`](@ref)
 of the [`eltype`](@ref) of `M`.
 
-# Example
+# Examples
 ```jldoctest
 julia> rank(eye(3))
 3
@@ -732,7 +732,7 @@ rank(x::Number) = x==0 ? 0 : 1
 
 Matrix trace. Sums the diagonal elements of `M`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 2; 3 4]
@@ -763,7 +763,7 @@ Matrix inverse. Computes matrix `N` such that
 Computed by solving the left-division
 `N = M \\ I`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> M = [2 5; 1 3]
@@ -802,7 +802,7 @@ When `A` is sparse, a similar polyalgorithm is used. For indefinite matrices, th
 factorization does not use pivoting during the numerical factorization and therefore the
 procedure can fail even for invertible matrices.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 0; 1 -2]; B = [32; -4];
@@ -1206,7 +1206,7 @@ end
 
 Matrix determinant.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> M = [1 0; 2 2]
@@ -1270,7 +1270,7 @@ For an (possibly nested) iterable object `itr`, promote the types of leaf
 elements.  Equivalent to `promote_type(typeof(leaf1), typeof(leaf2), ...)`.
 Currently supports only numeric leaf elements.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> a = [[1,2, [3,4]], 5.0, [6im, [7.0, 8.0]]]

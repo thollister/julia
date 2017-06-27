@@ -10,7 +10,7 @@ end
 
 Constructs a matrix from the diagonal of `A`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 2 3; 4 5 6; 7 8 9]
@@ -32,7 +32,7 @@ Diagonal(A::AbstractMatrix) = Diagonal(diag(A))
 
 Constructs a matrix with `V` as its diagonal.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> V = [1; 2]

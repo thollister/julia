@@ -122,7 +122,7 @@ The relationship between `F` and `A` is
 | [`logabsdet`](@ref)              | ✓    | ✓                      |
 | [`size`](@ref)                   | ✓    | ✓                      |
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [4 3; 6 3]
@@ -174,7 +174,7 @@ By default, pivoting is used. This can be overridden by passing
 
 See also [`lufact`](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [4. 3.; 6. 3.]

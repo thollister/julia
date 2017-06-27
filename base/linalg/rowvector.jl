@@ -61,7 +61,7 @@ convert(::Type{RowVector{T,V}}, rowvec::RowVector) where {T,V<:AbstractVector} =
 
 The transposition operator (`.'`).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> v = [1,2,3]
@@ -90,7 +90,7 @@ parent(rowvec::RowVector) = rowvec.vec
 
 Returns a [`ConjArray`](@ref) lazy view of the input, where each element is conjugated.
 
-### Example
+# Examples
 
 ```jldoctest
 julia> v = [1+im, 1-im].'

@@ -55,7 +55,7 @@ UpperTriangular(U::LowerTriangular) = throw(ArgumentError(
 
 Construct a `LowerTriangular` view of the the matrix `A`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1.0 2.0 3.0; 4.0 5.0 6.0; 7.0 8.0 9.0]
@@ -77,7 +77,7 @@ LowerTriangular
 
 Construct an `UpperTriangular` view of the the matrix `A`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1.0 2.0 3.0; 4.0 5.0 6.0; 7.0 8.0 9.0]

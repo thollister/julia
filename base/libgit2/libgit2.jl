@@ -74,7 +74,7 @@ end
 Checks if commit `id` (which is a [`GitHash`](@ref) in string form)
 is in the repository.
 
-# Example
+# Examples
 
 ```julia-repl
 julia> repo = LibGit2.GitRepo(repo_path);
@@ -109,7 +109,7 @@ Checks if there have been any changes to tracked files in the working tree (if
 `cached=false`) or the index (if `cached=true`).
 `pathspecs` are the specifications for options for the diff.
 
-# Example
+# Examples
 ```julia
 repo = LibGit2.GitRepo(repo_path)
 LibGit2.isdirty(repo) # should be false
@@ -132,7 +132,7 @@ Checks if there are any differences between the tree specified by `treeish` and 
 tracked files in the working tree (if `cached=false`) or the index (if `cached=true`).
 `pathspecs` are the specifications for options for the diff.
 
-# Example
+# Examples
 ```julia
 repo = LibGit2.GitRepo(repo_path)
 LibGit2.isdiff(repo, "HEAD") # should be false
@@ -168,7 +168,7 @@ The keyword argument is:
 
 Returns only the *names* of the files which have changed, *not* their contents.
 
-# Example
+# Examples
 
 ```julia
 LibGit2.branch!(repo, "branch/a")
@@ -219,7 +219,7 @@ end
 Returns `true` if `a`, a [`GitHash`](@ref) in string form, is an ancestor of
 `b`, a [`GitHash`](@ref) in string form.
 
-# Example
+# Examples
 
 ```julia-repl
 julia> repo = LibGit2.GitRepo(repo_path);
@@ -349,7 +349,7 @@ The keyword arguments are:
 
 Equivalent to `git checkout [-b|-B] <branch_name> [<commit>] [--track <track>]`.
 
-# Example
+# Examples
 
 ```julia
 repo = LibGit2.GitRepo(repo_path)
@@ -430,7 +430,7 @@ Checkout the git commit `commit` (a [`GitHash`](@ref) in string form)
 in `repo`. If `force` is `true`, force the checkout and discard any
 current changes. Note that this detaches the current HEAD.
 
-# Example
+# Examples
 
 ```julia
 repo = LibGit2.init(repo_path)
@@ -545,7 +545,7 @@ set by `mode`:
 
 Equivalent to `git reset [--soft | --mixed | --hard] <id>`.
 
-# Example
+# Examples
 
 ```julia
 repo = LibGit2.GitRepo(repo_path)
@@ -763,7 +763,7 @@ end
 
 Returns all authors of commits to the `repo` repository.
 
-# Example
+# Examples
 
 ```julia
 repo = LibGit2.GitRepo(repo_path)

@@ -58,7 +58,7 @@ be a tuple or a series of integer arguments corresponding to the lengths in each
 If the rank `N` is supplied explicitly as in `Array{T,N}(dims)`, then it must
 match the length or number of `dims`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = Array{Float64, 2}(2, 2);
@@ -410,7 +410,7 @@ Return an `Array` of all items in a collection or iterator. For associative coll
 `Pair{KeyType, ValType}`. If the argument is array-like or is an iterator with the `HasShape()`
 trait, the result will have the same shape and number of dimensions as the argument.
 
-# Example
+# Examples
 ```jldoctest
 julia> collect(1:2:13)
 7-element Array{Int64,1}:
@@ -695,7 +695,7 @@ end
 
 Insert the elements of `items` to the beginning of `a`.
 
-# Example
+# Examples
 ```jldoctest
 julia> prepend!([3],[1,2])
 3-element Array{Int64,1}:
@@ -803,7 +803,7 @@ end
 
 Insert one or more `items` at the beginning of `collection`.
 
-# Example
+# Examples
 ```jldoctest
 julia> unshift!([1, 2, 3, 4], 5, 6)
 6-element Array{Int64,1}:
@@ -837,7 +837,7 @@ end
 Insert an `item` into `a` at the given `index`. `index` is the index of `item` in
 the resulting `a`.
 
-# Example
+# Examples
 ```jldoctest
 julia> insert!([6, 5, 4, 2, 1], 4, 3)
 6-element Array{Int64,1}:
@@ -864,7 +864,7 @@ end
 Remove the item at the given `i` and return the modified `a`. Subsequent items
 are shifted to fill the resulting gap.
 
-# Example
+# Examples
 ```jldoctest
 julia> deleteat!([6, 5, 4, 3, 2, 1], 2)
 5-element Array{Int64,1}:
@@ -1039,7 +1039,7 @@ place of the removed items.
 To insert `replacement` before an index `n` without removing any items, use
 `splice!(collection, n:n-1, replacement)`.
 
-# Example
+# Examples
 ```jldoctest splice!
 julia> splice!(A, 4:3, 2)
 0-element Array{Int64,1}
@@ -1622,7 +1622,7 @@ end
 Return a tuple `(I, J, V)` where `I` and `J` are the row and column indexes of the non-zero
 values in matrix `A`, and `V` is a vector of the non-zero values.
 
-# Example
+# Examples
 ```jldoctest
 julia> A = [1 2 0; 0 0 3; 0 4 0]
 3×3 Array{Int64,2}:
@@ -2029,7 +2029,7 @@ both arguments must be collections, and both will be iterated over. In particula
 `setdiff(set,element)` where `element` is a potential member of `set`, will not work in
 general.
 
-# Example
+# Examples
 ```jldoctest
 julia> setdiff([1,2,3],[3,4,5])
 2-element Array{Int64,1}:
@@ -2063,7 +2063,7 @@ symdiff(a, b) = union(setdiff(a,b), setdiff(b,a))
 Construct the symmetric difference of elements in the passed in sets or arrays.
 Maintains order with arrays.
 
-# Example
+# Examples
 ```jldoctest
 julia> symdiff([1,2,3],[3,4,5],[4,5,6])
 3-element Array{Int64,1}:

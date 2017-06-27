@@ -1718,7 +1718,7 @@ For multiple iterable arguments, `f` is called elementwise.
 `foreach` should be used instead of `map` when the results of `f` are not
 needed, for example in `foreach(println, array)`.
 
-# Example
+# Examples
 ```jldoctest
 julia> a = 1:3:7;
 
@@ -1924,7 +1924,7 @@ end
 Like [`map`](@ref), but stores the result in `destination` rather than a new
 collection. `destination` must be at least as large as the first collection.
 
-# Example
+# Examples
 ```jldoctest
 julia> x = zeros(3);
 

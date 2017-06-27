@@ -94,7 +94,7 @@ MersenneTwister(seed::Vector{UInt32}, state::DSFMT_state) =
 Create a `MersenneTwister` RNG object. Different RNG objects can have their own seeds, which
 may be useful for generating different streams of random numbers.
 
-# Example
+# Examples
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 ```
@@ -309,7 +309,7 @@ the values are picked randomly from `S`.
 This is equivalent to `copy!(A, rand(rng, S, size(A)))`
 but without allocating a new array.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -771,7 +771,7 @@ end
 
 Generate a `BitArray` of random boolean values.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1389,7 +1389,7 @@ end
 Fill the array `A` with normally-distributed (mean 0, standard deviation 1) random numbers.
 Also see the [`rand`](@ref) function.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1410,7 +1410,7 @@ function randn! end
 
 Fill the array `A` with random numbers following the exponential distribution (with scale 1).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1478,7 +1478,7 @@ Generates a version 1 (time-based) universally unique identifier (UUID), as spec
 by RFC 4122. Note that the Node ID is randomly generated (does not identify the host)
 according to section 4.5 of the RFC.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1516,7 +1516,7 @@ end
 Generates a version 4 (random or pseudo-random) universally unique identifier (UUID),
 as specified by RFC 4122.
 
-# Example
+# Examples
 ```jldoctest
 julia> rng = MersenneTwister(1234);
 
@@ -1536,7 +1536,7 @@ end
 
 Inspects the given UUID and returns its version (see RFC 4122).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1660,7 +1660,7 @@ end
 In-place version of [`shuffle`](@ref): randomly permute `v` in-place,
 optionally supplying the random-number generator `rng`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1707,7 +1707,7 @@ number generator (see [Random Numbers](@ref)).
 To permute `v` in-place, see [`shuffle!`](@ref). To obtain randomly permuted
 indices, see [`randperm`](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1737,7 +1737,7 @@ number generator (see [Random Numbers](@ref)).
 To randomly permute a arbitrary vector, see [`shuffle`](@ref)
 or [`shuffle!`](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1776,7 +1776,7 @@ randperm(n::Integer) = randperm(GLOBAL_RNG, n)
 Construct a random cyclic permutation of length `n`. The optional `rng`
 argument specifies a random number generator, see [Random Numbers](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);

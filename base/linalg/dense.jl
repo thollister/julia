@@ -36,7 +36,7 @@ Test whether a matrix is positive definite by trying to perform a
 Cholesky factorization of `A`, overwriting `A` in the process.
 See also [`isposdef`](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1. 2.; 2. 50.];
@@ -59,7 +59,7 @@ Test whether a matrix is positive definite by trying to perform a
 Cholesky factorization of `A`.
 See also [`isposdef!`](@ref)
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 2; 2 50]
@@ -96,7 +96,7 @@ vecnorm2(x::Union{Array{T},StridedVector{T}}) where {T<:BlasFloat} =
 Returns the upper triangle of `M` starting from the `k`th superdiagonal,
 overwriting `M` in the process.
 
-# Example
+# Examples
 ```jldoctest
 julia> M = [1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5]
 5×5 Array{Int64,2}:
@@ -139,7 +139,7 @@ triu(M::Matrix, k::Integer) = triu!(copy(M), k)
 Returns the lower triangle of `M` starting from the `k`th superdiagonal, overwriting `M` in
 the process.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> M = [1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5; 1 2 3 4 5]
@@ -205,7 +205,7 @@ end
 
 A `Range` giving the indices of the `k`th diagonal of the matrix `M`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 2 3; 4 5 6; 7 8 9]
@@ -226,7 +226,7 @@ diagind(A::AbstractMatrix, k::Integer=0) = diagind(size(A,1), size(A,2), k)
 The `k`th diagonal of a matrix, as a vector.
 Use [`diagm`](@ref) to construct a diagonal matrix.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 2 3; 4 5 6; 7 8 9]
@@ -249,7 +249,7 @@ diag(A::AbstractMatrix, k::Integer=0) = A[diagind(A,k)]
 Construct a matrix by placing `v` on the `k`th diagonal. This constructs a full matrix; if
 you want a storage-efficient version with fast arithmetic, use [`Diagonal`](@ref) instead.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> diagm([1,2,3],1)
@@ -283,7 +283,7 @@ end
 
 Kronecker tensor product of two vectors or two matrices.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 2; 3 4]
@@ -401,7 +401,7 @@ used, otherwise the scaling and squaring algorithm (see [^H05]) is chosen.
 
 [^H05]: Nicholas J. Higham, "The squaring and scaling method for the matrix exponential revisited", SIAM Journal on Matrix Analysis and Applications, 26(4), 2005, 1179-1193. [doi:10.1137/090768539](http://dx.doi.org/10.1137/090768539)
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = eye(2, 2)
@@ -532,7 +532,7 @@ triangular factor.
 
 [^AHR13]: Awad H. Al-Mohy, Nicholas J. Higham and Samuel D. Relton, "Computing the Fréchet derivative of the matrix logarithm and estimating the condition number", SIAM Journal on Scientific Computing, 35(4), 2013, C394-C410. [doi:10.1137/120885991](http://dx.doi.org/10.1137/120885991)
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = 2.7182818 * eye(2)
@@ -599,7 +599,7 @@ and then the complex square root of the triangular factor.
     Linear Algebra and its Applications, 52-53, 1983, 127-140.
     [doi:10.1016/0024-3795(83)80010-X](http://dx.doi.org/10.1016/0024-3795(83)80010-X)
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [4 0; 0 4]
@@ -685,7 +685,7 @@ systems. For example: `A=factorize(A); x=A\\b; y=A\\C`.
 If `factorize` is called on a Hermitian positive-definite matrix, for instance, then `factorize`
 will return a Cholesky factorization.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = Array(Bidiagonal(ones(5, 5), true))
@@ -803,7 +803,7 @@ inverting dense ill-conditioned matrices in a least-squares sense,
 
 For more information, see [^issue8859], [^B96], [^S84], [^KY88].
 
-# Example
+# Examples
 
 ```jldoctest
 julia> M = [1.5 1.3; 1.2 1.9]
@@ -876,7 +876,7 @@ end
 
 Basis for nullspace of `M`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> M = [1 0 0; 0 1 0; 0 0 0]

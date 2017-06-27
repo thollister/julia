@@ -82,7 +82,7 @@ Subtraction operator.
 
 A string giving the literal bit representation of a number.
 
-# Example
+# Examples
 ```jldoctest
 julia> bits(4)
 "0000000000000000000000000000000000000000000000000000000000000100"
@@ -99,7 +99,7 @@ bits
 Construct a 1-d array of the specified type. This is usually called with the syntax
 `Type[]`. Element values can be specified using `Type[a,b,c,...]`.
 
-# Example
+# Examples
 ```jldoctest
 julia> Int8[1, 2, 3]
 3-element Array{Int8,1}:
@@ -153,7 +153,7 @@ getindex(::AbstractArray, inds...)
 Retrieve the value(s) stored at the given key or index within a collection. The syntax
 `a[i,j,...]` is converted by the compiler to `getindex(a, i, j, ...)`.
 
-# Example
+# Examples
 ```jldoctest
 julia> A = Dict("a" => 1, "b" => 2)
 Dict{String,Int64} with 2 entries:
@@ -316,7 +316,7 @@ Mmap.mmap(io, ::BitArray, dims = ?, offset = ?)
 Update `collection`, removing elements for which `function` is `false`.
 For associative collections, the function is passed two arguments (key and value).
 
-# Example
+# Examples
 ```jldoctest
 julia> filter!(isodd, collect(1:10))
 5-element Array{Int64,1}:
@@ -386,7 +386,7 @@ oftype
 
 Insert one or more `items` at the end of `collection`.
 
-# Example
+# Examples
 ```jldoctest
 julia> push!([1, 2, 3], 4, 5, 6)
 6-element Array{Int64,1}:
@@ -409,7 +409,7 @@ push!
 
 Convert all arguments to their common promotion type (if any), and return them all (as a tuple).
 
-# Example
+# Examples
 ```jldoctest
 julia> promote(Int8(1), Float16(4.5), Float32(4.1))
 (1.0f0, 4.5f0, 4.1f0)
@@ -582,7 +582,7 @@ print_shortest
 
 Construct a tuple of the given objects.
 
-# Example
+# Examples
 ```jldoctest
 julia> tuple(1, 'a', pi)
 (1, 'a', π = 3.1415926535897...)
@@ -604,7 +604,7 @@ eachmatch
 
 Get a hexadecimal string of the binary representation of a floating point number.
 
-# Example
+# Examples
 ```jldoctest
 julia> num2hex(2.2)
 "400199999999999a"
@@ -839,7 +839,7 @@ showcompact
 Extract a named field from a `value` of composite type. The syntax `a.b` calls
 `getfield(a, :b)`.
 
-# Example
+# Examples
 ```jldoctest
 julia> a = 1//2
 1//2
@@ -911,7 +911,7 @@ Create a random ASCII string of length `len`, consisting of upper- and
 lower-case letters and the digits 0-9. The optional `rng` argument
 specifies a random number generator, see [Random Numbers](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> rng = MersenneTwister(1234);
@@ -1087,7 +1087,7 @@ cglobal
 
 Returns the last index of the collection.
 
-# Example
+# Examples
 ```jldoctest
 julia> endof([1,2,4])
 3
@@ -1325,7 +1325,7 @@ maxintfloat
 
 Delete the mapping for the given key in a collection, and return the collection.
 
-# Example
+# Examples
 ```jldoctest
 julia> d = Dict("a"=>1, "b"=>2)
 Dict{String,Int64} with 2 entries:
@@ -1483,7 +1483,7 @@ read(stream, t)
 
 Remove the first `item` from `collection`.
 
-# Example
+# Examples
 ```jldoctest
 julia> A = [1, 2, 3, 4, 5, 6]
 6-element Array{Int64,1}:
@@ -1634,7 +1634,7 @@ IntSet
 Create a `Task` (i.e. coroutine) to execute the given function (which must be
 callable with no arguments). The task exits when this function returns.
 
-# Example
+# Examples
 ```jldoctest
 julia> a() = det(rand(1000, 1000));
 

@@ -1145,7 +1145,7 @@ end
 
 Performs a bitwise not operation on `B`. See [`~`](@ref).
 
-# Example
+# Examples
 ```jldoctest
 julia> A = trues(2,2)
 2×2 BitArray{2}:
@@ -1388,7 +1388,7 @@ with elements shifted `n` positions forward, filling with `false`
 values. If `n < 0`, elements are shifted backwards. Equivalent to
 `B << -n`.
 
-## Example
+## Examples
 
 ```jldoctest
 julia> B = BitVector([true, false, true, false, false])

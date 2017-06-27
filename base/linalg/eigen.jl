@@ -79,7 +79,7 @@ before the eigenvector calculation. The option `permute=true` permutes the matri
 closer to upper triangular, and `scale=true` scales the matrix by its diagonal elements to
 make rows and columns more equal in norm. The default is `true` for both options.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> F = eigfact([1.0 0.0 0.0; 0.0 3.0 0.0; 0.0 0.0 18.0])
@@ -122,7 +122,7 @@ See [`eigfact`](@ref) for details on the
 and the `permute` and `scale` keyword arguments.
 The eigenvectors are returned columnwise.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> eig([1.0 0.0 0.0; 0.0 3.0 0.0; 0.0 0.0 18.0])
@@ -144,7 +144,7 @@ Returns a matrix `M` whose columns are the eigenvectors of `A`. (The `k`th eigen
 be obtained from the slice `M[:, k]`.) The `permute` and `scale` keywords are the same as
 for [`eigfact`](@ref).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> eigvecs([1.0 0.0 0.0; 0.0 3.0 0.0; 0.0 0.0 18.0])
@@ -209,7 +209,7 @@ Note that if the eigenvalues of `A` are complex,
 this method will fail, since complex numbers cannot
 be sorted.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [0 im; -im 0]
@@ -251,7 +251,7 @@ Note that if the eigenvalues of `A` are complex,
 this method will fail, since complex numbers cannot
 be sorted.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [0 im; -im 0]
@@ -338,7 +338,7 @@ Computes generalized eigenvalues (`D`) and vectors (`V`) of `A` with respect to 
 `eig` is a wrapper around [`eigfact`](@ref), extracting all parts of the
 factorization to a tuple; where possible, using [`eigfact`](@ref) is recommended.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 0; 0 -1]
@@ -385,7 +385,7 @@ end
 
 Computes the generalized eigenvalues of `A` and `B`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 0; 0 -1]
@@ -415,7 +415,7 @@ end
 Returns a matrix `M` whose columns are the generalized eigenvectors of `A` and `B`. (The `k`th eigenvector can
 be obtained from the slice `M[:, k]`.)
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 0; 0 -1]

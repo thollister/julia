@@ -132,7 +132,7 @@ Ac_mul_B!(y::AbstractVector, A::AbstractVecOrMat, x::AbstractVector) = generic_m
 
 Matrix multiplication.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> [1 1; 0 1] * [1 0; 1 1]
@@ -164,7 +164,7 @@ Calculates the matrix-matrix or matrix-vector product ``A⋅B`` and stores the r
 overwriting the existing value of `Y`. Note that `Y` must not be aliased with either `A` or
 `B`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A=[1.0 2.0; 3.0 4.0]; B=[1.0 1.0; 1.0 1.0]; Y = similar(B); A_mul_B!(Y, A, B);

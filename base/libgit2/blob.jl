@@ -39,7 +39,7 @@ end
 Reads the file at `path` and adds it to the object database of `repo` as a loose blob.
 Returns the `GitHash` of the resulting blob.
 
-# Example
+# Examples
 
 ```julia
 hash_str = hex(commit_oid)

@@ -362,7 +362,7 @@ log(x)
 Compute the logarithm of `x` to base 2. Throws [`DomainError`](@ref) for negative
 [`Real`](@ref) arguments.
 
-# Example
+# Examples
 ```jldoctest
 julia> log2(4)
 2.0
@@ -379,7 +379,7 @@ log2(x)
 Compute the logarithm of `x` to base 10.
 Throws [`DomainError`](@ref) for negative [`Real`](@ref) arguments.
 
-# Example
+# Examples
 ```jldoctest
 julia> log10(100)
 2.0
@@ -523,7 +523,7 @@ minmax(x::T, y::T) where {T<:AbstractFloat} =
 
 Compute ``x \\times 2^n``.
 
-# Example
+# Examples
 ```jldoctest
 julia> ldexp(5., 2)
 20.0
@@ -685,7 +685,7 @@ rem(x::Float16, y::Float16, r::RoundingMode{:Nearest}) = Float16(rem(Float32(x),
 Return a tuple (fpart,ipart) of the fractional and integral parts of a number. Both parts
 have the same sign as the argument.
 
-# Example
+# Examples
 ```jldoctest
 julia> modf(3.5)
 (0.5, 3.0)
@@ -791,7 +791,7 @@ without any intermediate rounding. This internally uses a high precision approxi
 
 - if `r == RoundUp`, then the result is in the interval ``[-2π, 0]``.
 
-# Example
+# Examples
 ```jldoctest
 julia> rem2pi(7pi/4, RoundNearest)
 -0.7853981633974485
@@ -926,7 +926,7 @@ This function computes a floating point representation of the modulus after divi
 numerically exact `2π`, and is therefore not exactly the same as `mod(x,2π)`, which would
 compute the modulus of `x` relative to division by the floating-point number `2π`.
 
-# Example
+# Examples
 ```jldoctest
 julia> mod2pi(9*pi/4)
 0.7853981633974481
@@ -943,7 +943,7 @@ Combined multiply-add, computes `x*y+z` in an efficient manner. This may on some
 equivalent to `x*y+z`, or to `fma(x,y,z)`. `muladd` is used to improve performance.
 See [`fma`](@ref).
 
-# Example
+# Examples
 ```jldoctest
 julia> muladd(3, 2, 1)
 7

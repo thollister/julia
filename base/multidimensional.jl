@@ -28,7 +28,7 @@ module IteratorsMD
     A `CartesianIndex` is sometimes produced by [`eachindex`](@ref), and
     always when iterating with an explicit [`CartesianRange`](@ref).
 
-    # Example
+    # Examples
 
     ```jldoctest
     julia> A = reshape(collect(1:16), (2, 2, 2, 2))
@@ -143,7 +143,7 @@ module IteratorsMD
     Consequently these can be useful for writing algorithms that
     work in arbitrary dimensions.
 
-    # Example
+    # Examples
     ```jldoctest
     julia> foreach(println, CartesianRange((2, 2, 2)))
     CartesianIndex{3}((1, 1, 1))
@@ -944,7 +944,7 @@ their indices; any offset results in a (circular) wraparound. If the
 arrays have overlapping indices, then on the domain of the overlap
 `dest` agrees with `src`.
 
-# Example
+# Examples
 ```julia-repl
 julia> src = reshape(collect(1:16), (4,4))
 4×4 Array{Int64,2}:
@@ -1454,7 +1454,7 @@ end
 
 Compute the minimum and maximum elements of an array over the given dimensions.
 
-# Example
+# Examples
 ```jldoctest
 julia> A = reshape(collect(1:2:16), (2,2,2))
 2×2×2 Array{Int64,3}:

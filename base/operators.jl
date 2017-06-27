@@ -691,7 +691,7 @@ fldmod1(x::T, y::T) where {T<:Integer} = (fld1(x,y), mod1(x,y))
 
 The conjugate transposition operator (`'`).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A =  [3+2im 9+2im; 8+7im  4+6im]

@@ -127,7 +127,7 @@ Return an array containing only the unique elements of collection `itr`,
 as determined by [`isequal`](@ref), in the order that the first of each
 set of equivalent elements originally appears.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> unique([1, 2, 6, 2])
@@ -184,7 +184,7 @@ end
 Returns an array containing one value from `itr` for each unique value produced by `f`
 applied to elements of `itr`.
 
-# Example
+# Examples
 
 ```jldoctest
 julia> unique(isodd, [1, 2, 6, 2])

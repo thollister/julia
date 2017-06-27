@@ -99,7 +99,7 @@ end
 
 The transposition operator (`.'`).
 
-# Example
+# Examples
 
 ```jldoctest
 julia> A = [1 2 3; 4 5 6; 7 8 9]
