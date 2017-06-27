@@ -1388,7 +1388,7 @@ with elements shifted `n` positions forward, filling with `false`
 values. If `n < 0`, elements are shifted backwards. Equivalent to
 `B << -n`.
 
-## Examples
+# Examples
 ```jldoctest
 julia> B = BitVector([true, false, true, false, false])
 5-element BitArray{1}:
